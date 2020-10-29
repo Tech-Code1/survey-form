@@ -3,28 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <title>Form</title>
 </head>
-<body>
+<body class="content-body">
     <h1 id="title">Encuesta - Opinión Usuarios</h1>
     <p id="description">Queremos conocer tu opinión sobre el proyecto</p>
-    <form action="" id="survey-form">
-        <label for="name" id="name-label"> Name
+    <form action="" id="survey-form" class="content-form">
+        <label class="label-description" for="name" id="name-label"> <span class="title-label">Nombre</span>
           <input type="text" id="name" placeholder="Ingresa tu nombre">
         </label>
-        <label for="email" id="email-label"> Email
+        <label class="label-description" for="email" id="email-label"> <span class="title-label">Email</span>
           <input type="email" id="email" placeholder="Ingresa tu correo">
         </label>
-        <label for="number" id="number-label"> Estratro
+        <label class="label-description" for="number" id="number-label"> <span class="title-label">Estratro</span>
           <input type="number" id="number" placeholder="Ingresa tu estrato" min="1" max="6">
         </label>
-        <label for="dropdown"> Elije tu genero
+        <label class="label-description" for="dropdown"> <span class="title-label">Elije tu genero</span>
         <select name="" id="dropdown">
             <option value="" selected disabled>Seleccionar</option>
             <option value="">Femenino</option>
             <option value="">Hombre</option>
         </select>
-<label for="" > Escoja su color preferido:
+    </label>
+<label class="label-description" for="" > <span class="title-label">Escoja su color preferido:</span>
 <input type="radio" name="type-radio"> Azul
 <input type="radio" name="type-radio"> Rojo
 <input type="radio" name="type-radio"> Verde
@@ -32,15 +36,16 @@
 <input type="radio" name="type-radio"> Blanco
 </label>
 
-    </label for="checkbox"> Temas de interes:
+    <label class="label-description" for="checkbox"> <span class="title-label">Temas de interes:</span>
 <input type="checkbox" value="checkbox-one" id="checkbox"> Tenología
 <input type="checkbox" value="checkbox-two" id="checkbox"> Cine
 <input type="checkbox" value="checkbox-three" id="checkbox"> Lectura
 <input type="checkbox" value="checkbox-four" id="checkbox"> Entretenimiento
 <input type="checkbox" value="checkbox-five" id="checkbox"> Estudio
 <input type="checkbox" value="checkbox-six" id="checkbox"> Vehiculos
+</label>
 
-<label for="textarea"> Nos importa tu opinion:
+<label class="label-description" for="textarea"> <span class="title-label">Nos importa tu opinion:</span>
 <textarea name="" id="textarea" cols="30" rows="10" placeholder="Danos tu opinion sobre la encuesta">
 
 </textarea>
